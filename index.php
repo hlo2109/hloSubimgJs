@@ -54,7 +54,6 @@
 			</div>
 		</div>
 	</div>
-	<p data-height="265" data-theme-id="0" data-slug-hash="dOXmBJ" data-default-tab="html" data-user="LantareCode" data-embed-version="2" data-pen-title="Super Mario (Animation)" class="codepen">See the Pen <a href="http://codepen.io/LantareCode/pen/dOXmBJ/">Super Mario (Animation)</a> by LantareCode (<a href="http://codepen.io/LantareCode">@LantareCode</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
 </body>
 </html>
