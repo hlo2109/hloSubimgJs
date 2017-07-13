@@ -1,11 +1,12 @@
 # hloSubimgJs
-
+Con la reciente actualización se puede enviar datos adicionales y no solo la imagen, recuerden que todo se recibe por POST.
 ## Javascript multiple
 
 	<script type="text/javascript">
 		$(function(){
 			$(".botonimage").hloSubimgJs({
 				"name":"file",
+				"data":{"variable":"dato"},
 				"fileUplaod":"image-ajax-multiple.php",
 				"multifile":true,
 				success:function(data){				
