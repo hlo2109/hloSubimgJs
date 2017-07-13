@@ -1,3 +1,4 @@
+// Desarrollado por hlo21.com
 (function($){
 
 	$.fn.extend({
@@ -7,18 +8,16 @@
 			$("#form"+op.name).remove();
 			var txtor = this.text();
 			var mul = "";
-
 			var mult = "";
-
 			if (op.multifile==true){
-
 				mul = "[]";
-
 				mult = "multiple";
-
 			}		
-
-			$("body").append('<form method="post" id="form'+op.name+'" enctype="multipart/form-data"><input type="file" name="'+op.name+mul+'" '+mult+' ><input type="hidden" name="campfile" value="'+op.name+'" > </form>');
+			var campos = "";
+			$.each(op.data,function(a,p){	
+				campos+="<input type='hidden' name='"+a+"' value='"+p+"'>";
+			})
+			$("body").append('<form method="post" id="form'+op.name+'" enctype="multipart/form-data">'+campos+'<input type="file" name="'+op.name+mul+'" '+mult+' ><input type="hidden" name="campfile" value="'+op.name+'" > </form>');
 
 			$("#form"+op.name).hide();
 
