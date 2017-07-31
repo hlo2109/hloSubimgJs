@@ -124,6 +124,7 @@ Con la reciente actualización se puede enviar datos adicionales y no solo la im
 		$(function(){
 			$(".botonimage").hloSubimgJs({
 				"name":"file",
+				"data":{},
 				"fileUplaod":"image-ajax.php",
 				"multifile":false,
 				success:function(data){
